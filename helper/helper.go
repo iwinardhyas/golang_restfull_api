@@ -12,7 +12,7 @@ import (
 
 func Db() (*mongo.Client, context.Context) {
 	client, err := mongo.NewClient(options.Client().
-		ApplyURI("mongodb+srv://stream:abcd12345@cluster0.3515n.mongodb.net/Cluster0?retryWrites=true&w=majority"))
+		ApplyURI(""))
 	if err != nil {
 		log.Fatal(err)
 	}
